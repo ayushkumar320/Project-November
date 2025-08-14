@@ -7,6 +7,7 @@ import {ConditionsGrid} from "@/components/conditions-grid";
 import {CallToActionSection} from "@/components/call-to-action-section";
 import {ModernFooter} from "@/components/modern-footer";
 import {diseaseTypes} from "@/components/disease-data";
+import Link from "next/link";
 
 export default function HomePage() {
   const [theme, setTheme] = useState<"light" | "dark">(() => {
@@ -70,6 +71,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-white to-slate-100 dark:from-gray-950 dark:to-gray-900 text-slate-800 dark:text-slate-100 transition-colors duration-500 relative">
+      <a href="/doctProfile">doct profile</a>
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-32 -left-32 h-72 w-72 rounded-full bg-pink-500/10 blur-3xl dark:bg-pink-600/20 animate-pulse" />
         <div className="absolute -bottom-32 -right-32 h-72 w-72 rounded-full bg-purple-500/10 blur-3xl dark:bg-purple-700/20 animate-pulse [animation-delay:3s]" />
